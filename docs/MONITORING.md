@@ -1,0 +1,10 @@
+# Monitoring - budget-orchestrator
+
+- Prometheus scrapes `/metrics` every 15s
+- Grafana dashboard: `monitoring/grafana-dashboard.json`
+- Alerts include high error rate, crash loops, and latency spikes.
+
+SLO: 99.9% availability, p95 < 250ms
+Error budget: 43m/month
+
+We treat observability as a first-class citizen with alerts tuned to what actually matters in an outage.

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: budget-orchestrator
+spec:
+  selector:
+    app: budget-orchestrator
+  ports:
+  - port: 80
+    targetPort: 8080
